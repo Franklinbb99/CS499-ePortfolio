@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+
+  <a class="navbar-brand" routerLink="">
+    Travlr Getaways
+  </a>
+
+  <div class="navbar-nav">
+
+    <a class="nav-link" routerLink="">
+      Trips
+    </a>
+
+  </div>
+
+  <div class="navbar-end">
+
+    <a
+      class="nav-item"
+      routerLink="login"
+      *ngIf="!isLoggedIn()">
+
+      Log In
+
+    </a>
+
+    <a
+      class="nav-item"
+      (click)="onLogout()"
+      *ngIf="isLoggedIn()">
+
+      Log Out
+
+    </a>
+
+  </div>
+
+</nav>

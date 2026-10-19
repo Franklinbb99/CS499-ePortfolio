@@ -1,0 +1,50 @@
+@if (isLoggedIn()) {
+
+  <div class="row">
+
+    <div class="col-12">
+
+      <button class="btn btn-primary" (click)="addTrip()">Add Trip</button>
+
+    </div>
+
+  </div>
+
+}
+
+<section class="trip-search mb-3" aria-label="Search trips">
+  <label for="trip-search" class="form-label">Search trips</label>
+  <input
+    id="trip-search"
+    class="form-control"
+    type="search"
+    [(ngModel)]="searchTerm"
+    placeholder="Search by trip name, code, or resort"
+    autocomplete="off"
+  >
+</section>
+
+@if (isLoading) {
+  <p role="status">Loading trips...</p>
+} @else if (loadError) {
+  <p class="text-danger" role="alert">{{ loadError }}</p>
+} @else if (filteredTrips.length === 0) {
+  <p role="status">
+    @if (searchTerm.trim()) {
+      No trips match your search. Try another name, code, or resort.
+    } @else {
+      No trips are available right now.
+    }
+  </p>
+} @else {
+<p aria-live="polite">{{ filteredTrips.length }} trip(s) found.</p>
+<div class="row">
+  @for (trip of filteredTrips; track trip._id) {
+    <div class="col-md-4">
+      <app-trip-card [trip]="trip" class="card-deck mt-2"></app-trip-card>
+    </div>
+  }
+</div>
+}
+
+    
