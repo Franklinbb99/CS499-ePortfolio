@@ -1,0 +1,23 @@
+@if (isLoggedIn()) {
+
+  <div class="row">
+
+    <div class="col-12">
+
+      <button class="btn btn-primary" (click)="addTrip()">Add Trip</button>
+
+    </div>
+
+  </div>
+
+}
+
+<div class="row">
+  @for (trip of trips; track trip._id) {
+    <div class="col-md-4">
+      <app-trip-card [trip]="trip" class="card-deck mt-2"></app-trip-card>
+    </div>
+  }
+</div>
+
+    
