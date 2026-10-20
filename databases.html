@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Databases | Frank Baer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #111827;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #1f2937;
+            margin-top: 30px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 18px;
+        }
+
+        .project-info {
+            background: #f3f4f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .link-card {
+            background: #1f2937;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .link-card h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .link-card p {
+            color: white;
+        }
+
+        .link-card a {
+            display: inline-block;
+            margin-top: 10px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .link-card a:hover {
+            background: #1d4ed8;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #e5e7eb;
+            padding: 7px 12px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Databases</h1>
+    <p>Animal Shelter | CS340</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="professional-self-assessment.html">Self-Assessment</a>
+    <a href="software-engineering.html">Software Engineering</a>
+    <a href="algorithms.html">Algorithms</a>
+    <a href="databases.html">Databases</a>
+    <a href="code-review.html">Code Review</a>
+</nav>
+
+<div class="container">
+
+    <div class="content">
+
+        <h2>Animal Shelter</h2>
+
+        <p>
+            The Animal Shelter project was completed as part of CS340 and gave
+            me experience working with Python and MongoDB. The project used
+            an AnimalShelter class to communicate with the database and
+            perform database operations.
+        </p>
+
+        <div class="project-info">
+
+            <h3>Project Information</h3>
+
+            <p><strong>Course:</strong> CS340 Advanced Programming Concepts</p>
+
+            <p><strong>Category:</strong> Databases</p>
+
+            <p><strong>Project:</strong> Animal Shelter</p>
+
+            <p>
+                <strong>Technologies:</strong>
+                Python, MongoDB, PyMongo
+            </p>
+
+        </div>
+
+        <h3>About the Project</h3>
+
+        <p>
+            The Animal Shelter project gave me experience working with a
+            MongoDB database through Python. The project included an
+            AnimalShelter class that provided a way for the Python application
+            to communicate with the database.
+        </p>
+
+        <p>
+            Working on this project helped me understand how applications
+            store, retrieve, and work with information in a database. It also
+            gave me experience using database queries to find information that
+            matched specific requirements.
+        </p>
+
+        <h3>My Enhancement</h3>
+
+        <p>
+            For my CS499 enhancement, I improved the search functionality of
+            the AnimalShelter class. I added reusable search options that can
+            be used to find information based on different pieces of animal
+            data.
+        </p>
+
+        <p>
+            The enhanced search functionality includes options such as animal
+            type, breed, age range, and combinations of filters. This made the
+            database code more flexible because it could be used for different
+            types of searches instead of only one basic query.
+        </p>
+
+        <h3>What I Learned</h3>
+
+        <p>
+            One of the biggest things I learned from this enhancement was the
+            importance of making database code reusable. If an application
+            needs to perform different searches, it is useful to have a
+            flexible way to provide search information instead of creating
+            completely separate code for every possible search.
+        </p>
+
+        <p>
+            I also learned more about how Python can communicate with MongoDB.
+            The Python application provides a way to work with information
+            stored in the database and return useful results.
+        </p>
+
+        <p>
+            Another thing I learned was that the way data is searched can have
+            a big effect on how useful an application is. Adding different
+            filtering options makes it easier to find specific information.
+        </p>
+
+        <h3>Challenges</h3>
+
+        <p>
+            One challenge I experienced while working with this project was
+            making sure the Python application could connect to MongoDB
+            correctly. I had to troubleshoot database connection and
+            authentication issues during my coursework.
+        </p>
+
+        <p>
+            The enhancement also required me to understand the existing
+            database code before adding new functionality. Instead of
+            replacing everything, I kept the existing CRUD structure and
+            built additional search functionality around it.
+        </p>
+
+        <h3>Skills Demonstrated</h3>
+
+        <div class="skills">
+
+            <span>Python</span>
+            <span>MongoDB</span>
+            <span>PyMongo</span>
+            <span>CRUD Operations</span>
+            <span>Database Queries</span>
+            <span>Data Filtering</span>
+            <span>Problem Solving</span>
+            <span>Debugging</span>
+
+        </div>
+
+        <h3>Course Outcomes</h3>
+
+        <p>
+            This artifact demonstrates my ability to use computing tools and
+            techniques to implement a solution involving a database. It also
+            demonstrates my ability to evaluate an existing solution and
+            improve its functionality.
+        </p>
+
+        <p>
+            The project connects directly to the database portion of my
+            computer science education and gives an example of my experience
+            working with Python and MongoDB.
+        </p>
+
+        <h3>Project Files</h3>
+
+        <div class="links">
+
+            <div class="link-card">
+                <h3>Original Project</h3>
+
+                <p>
+                    View the original Animal Shelter database project.
+                </p>
+
+                <a href="databases/original/">
+                    View Original
+                </a>
+            </div>
+
+            <div class="link-card">
+                <h3>Enhanced Project</h3>
+
+                <p>
+                    View the enhanced database project completed for CS499.
+                </p>
+
+                <a href="databases/enhanced/">
+                    View Enhanced
+                </a>
+            </div>
+
+            <div class="link-card">
+                <h3>Project Narrative</h3>
+
+                <p>
+                    Read my reflection about the project and enhancement.
+                </p>
+
+                <a href="databases/narrative/">
+                    View Narrative
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Frank Baer | Bachelor of Science in Computer Science</p>
+    <p>CS499 Computer Science Capstone</p>
+</footer>
+
+</body>
+</html>
