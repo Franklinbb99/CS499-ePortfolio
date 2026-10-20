@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frank Baer | Computer Science ePortfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #111827;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .intro h2 {
+            margin-bottom: 15px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .card a:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Frank Baer</h1>
+    <p>Computer Science ePortfolio</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="professional-self-assessment.html">Self-Assessment</a>
+    <a href="software-engineering.html">Software Engineering</a>
+    <a href="algorithms.html">Algorithms</a>
+    <a href="databases.html">Databases</a>
+    <a href="code-review.html">Code Review</a>
+</nav>
+
+<div class="container">
+
+    <section class="intro">
+        <h2>Welcome to My Computer Science ePortfolio</h2>
+
+        <p>
+            My name is Frank Baer, and I recently completed my Bachelor of Science
+            in Computer Science. This portfolio shows some of the projects I
+            completed throughout my program and the improvements I made to them
+            during my CS499 capstone.
+        </p>
+
+        <br>
+
+        <p>
+            My coursework gave me experience with programming, software
+            development, databases, algorithms, and security. The projects
+            included in this portfolio represent different parts of my growth
+            throughout the Computer Science program.
+        </p>
+
+        <br>
+
+        <p>
+            Use the navigation above to learn more about my background,
+            professional goals, and the projects I selected for my ePortfolio.
+        </p>
+    </section>
+
+    <section>
+        <h2>My Computer Science Projects</h2>
+
+        <br>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Software Engineering</h3>
+
+                <p>
+                    Travlr Getaways — a full-stack web application developed
+                    using technologies including Angular, Node.js, Express,
+                    and MongoDB.
+                </p>
+
+                <a href="software-engineering.html">
+                    View Project
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Algorithms & Data Structures</h3>
+
+                <p>
+                    Treasure Hunt — a reinforcement learning project using
+                    Q-learning and training analysis.
+                </p>
+
+                <a href="algorithms.html">
+                    View Project
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Databases</h3>
+
+                <p>
+                    Animal Shelter — a Python and MongoDB project demonstrating
+                    database operations and reusable search functionality.
+                </p>
+
+                <a href="databases.html">
+                    View Project
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Frank Baer | Bachelor of Science in Computer Science</p>
+    <p>CS499 Computer Science Capstone</p>
+</footer>
+
+</body>
+</html>
